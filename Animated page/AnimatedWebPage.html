@@ -1,0 +1,103 @@
+<style>
+*{
+    margin:0;
+    padding:0;
+ 
+}
+.hero{
+    width: 100%;
+    height:100vh;
+    background-image:url("https://i.pinimg.com/originals/b7/ff/e5/b7ffe556b5c07784ab6ee8e58ee08881.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bubbless img{
+width:50px;
+animation: bubble 7s linear infinite;
+}
+.bubbless{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity:0 ;
+    }
+   
+}
+
+.bubbless img:nth-child(1){
+    animation-delay: 2s;
+    width:25px;
+}
+.bubbless img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbless img:nth-child(3){
+    animation-delay: 3s;
+    width:30px;
+}
+.bubbless img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbless img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbless img:nth-child(6){
+    width:20px;
+    animation-delay: 6s;
+}
+.bubbless img:nth-child(7){
+    width:35px;
+    animation-delay: 5s;
+}
+.text{
+    position: absolute;
+    top:45%;
+    left:38%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+color:white;
+}
+
+</style>
+
+<html>
+    <head>
+        <title>Follow a tutorial</title>
+    </head>
+    <body>
+<div class="hero">
+    <div class="text">
+        <p>MLH LHD: share 2021</p>
+    </div>
+<div class="bubbless">
+    <img src="bubble.png">
+    <img src="bubble.png"> 
+    <img src="bubble.png">
+    <img src="bubble.png"> 
+    <img src="bubble.png">
+    <img src="bubble.png">
+    <img src="bubble.png">
+</div>
+</div>
+    </body>
+    </html>
